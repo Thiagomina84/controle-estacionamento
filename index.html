@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estacionamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Controle de Estacionamento</h1>
+
+        <nav>
+            <a href="index.html">Vagas</a>
+            <a href="cadastro.html">Cadastrar Reserva</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Visão Geral</h2>
+
+            <div class="indicadores">
+                <div class="card">
+                    <h3>Total de Vagas</h3>
+                    <p id="total-vagas">30</p>
+                </div>
+
+                <div class="card">
+                    <h3>Vagas Disponíveis</h3>
+                    <p id="vagas-disponiveis">30</p>
+                </div>
+
+                <div class="card">
+                    <h3>Vagas Ocupadas</h3>
+                    <p id="vagas-ocupadas">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Reservas Cadastradas</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vaga</th>
+                        <th>Placa</th>
+                        <th>Proprietário</th>
+                        <th>Apartamento</th>
+                        <th>Bloco</th>
+                        <th>Modelo</th>
+                        <th>Cor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="lista-reservas">
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Vagas Disponíveis</h2>
+
+            <div id="lista-vagas-disponiveis">
+            </div>
+        </section>
+    </main>
+
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+
+</body>
+
+</html>
